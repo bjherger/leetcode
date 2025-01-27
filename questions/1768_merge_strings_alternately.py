@@ -16,7 +16,8 @@ class Solution:
 
         new_word_list = list()
         i=0
-        while i < max([len(word1), len(word2)]):
+        max_index = max([len(word1), len(word2)])
+        while i < max_index:
             if i < len(word1):
                 new_word_list.append(word1[i])
             if i < len(word2):

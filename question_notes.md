@@ -6,7 +6,7 @@ Pretty straight forward. There is a slightly worse option (two pointers), but no
 
 Interestingly, leetcode doesn't consider the input strings or output string in the memory complexity
 
-## [1071_greatest_common_divisor_of_stringstext](questions/1071_greatest_common_divisor_of_strings.py)]
+## [1071_greatest_common_divisor_of_strings](questions/1071_greatest_common_divisor_of_strings.py)]
 
 No huge notes. I don't think I could have arrived at the math proof on my own, but it makes sense (and might be recognizable). 
 
