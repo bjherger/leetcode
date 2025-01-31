@@ -34,9 +34,8 @@ class Solution:
             return_array[i] = c + extraCandies >= max_candies
 
         return return_array
-
-
+    
 
 s = Solution()
-assert(s.kidsWithCandies([1,2,3], 1000), [True, True, True])
-assert(s.kidsWithCandies([1,2,2], 1000), [True, True, True])
+assert(s.kidsWithCandies([1,2,3], 1000) ==  [True, True, True])
+assert(s.kidsWithCandies([1,2,2], 1000)== [True, True, True])

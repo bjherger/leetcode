@@ -54,6 +54,6 @@ class Solution:
     
 
 s = Solution()
-assert(s.gcdOfStrings('ABCABC', 'ABC'), 'ABC')
-assert(s.gcdOfStrings('ABCABC', 'ABCD'), '')
-assert(s.gcdOfStrings('ABCABCABCABCABCABC', 'ABCABC'), 'ABCABC')
+assert(s.gcdOfStrings('ABCABC', 'ABC') == 'ABC')
+assert(s.gcdOfStrings('ABCABC', 'ABCD') == '')
+assert(s.gcdOfStrings('ABCABCABCABCABCABC', 'ABCABC') == 'ABCABC')
