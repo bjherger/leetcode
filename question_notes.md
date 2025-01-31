@@ -11,3 +11,9 @@ Interestingly, leetcode doesn't consider the input strings or output string in t
 No huge notes. I don't think I could have arrived at the math proof on my own, but it makes sense (and might be recognizable). 
 
 Time to implement (31 minutes) is a little long, and implementation could have been cleaner.
+
+## [1431_kids_with_the_greatest_number_of_candies](questions/1431_kids_with_the_greatest_number_of_candies.py)
+
+No huge notes. Suprisingly straight forward - was it even worth mentioning BF / sorting options. 
+
+Time to implement (10 minutes) is a little long. Also, couple of small implementation issues (e.g. calling to array instead of first element in array, clean variable names, python asserts don't really take 2 parameters but a `==` instead)
