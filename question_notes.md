@@ -17,3 +17,7 @@ Time to implement (31 minutes) is a little long, and implementation could have b
 No huge notes. Suprisingly straight forward - was it even worth mentioning BF / sorting options. 
 
 Time to implement (10 minutes) is a little long. Also, couple of small implementation issues (e.g. calling to array instead of first element in array, clean variable names, python asserts don't really take 2 parameters but a `==` instead)
+
+## [605_can_place_flowers](questions/605_can_place_flowers.py)
+
+Time to implement (17 minutes) is a little long. Also, one minor implementation issue (originall `next <= len(flowerbed)` instead of `next >= len(flowerbed)`). The question was also a little unclear about whether the edge flower pots are fair game for planting, but it seems like they are. 
