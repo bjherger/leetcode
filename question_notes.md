@@ -32,3 +32,7 @@ For reference:
 
  - A stack can be implemented w/ a append and pop usage of a normal list
  - The two pointer solution consumes less space, but is equal space complexity
+
+## [151_reverse_words_in_a_string](questions/151_reverse_words_in_a_string.py)
+
+Time to implement (7 minutes) was fine. First run didn't work because of a mistake in the final flush after the for loop (using `word_list.append(word_buffer)` instead of `word_list.append(''.join(word_buffer))`). Second run had errors, due to spaces being included. Fixed by separating `if c == ' ' and len(word_buffer) > 0:` into two separate if statements.
