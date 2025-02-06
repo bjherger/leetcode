@@ -36,3 +36,11 @@ For reference:
 ## [151_reverse_words_in_a_string](questions/151_reverse_words_in_a_string.py)
 
 Time to implement (7 minutes) was fine. First run didn't work because of a mistake in the final flush after the for loop (using `word_list.append(word_buffer)` instead of `word_list.append(''.join(word_buffer))`). Second run had errors, due to spaces being included. Fixed by separating `if c == ' ' and len(word_buffer) > 0:` into two separate if statements.
+
+## [227_basic_calculator_ii](questions/227_basic_calculator_ii.py)
+
+Non-leetcode 75 special side treck
+
+Took 55 minutes and some peeking at a chat GPT solution to answer. I would not have arrived at using a stack on my own, and the solution was pretty tricky. This is a pretty hard question. I should practice it again, given that it seems to come up often.
+
+My intuition is not to use a stack, but to use a recursive approach, but this would be pretty thorny (subbing in multiplication results)
