@@ -1,0 +1,16 @@
+# PyTorch
+torch>=2.0.0
+torchvision>=0.15.0
+
+# ML
+scikit-learn>=1.0.0
+xgboost>=2.0.0
+
+# Hugging Face (for pytorch_attention_example IMDB)
+datasets>=2.0.0
+
+# Keras (ml/keras examples; use tensorflow backend)
+keras>=3.0.0
+
+# Core
+numpy>=1.20.0
