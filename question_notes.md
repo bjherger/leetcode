@@ -44,3 +44,6 @@ Non-leetcode 75 special side treck
 Took 55 minutes and some peeking at a chat GPT solution to answer. I would not have arrived at using a stack on my own, and the solution was pretty tricky. This is a pretty hard question. I should practice it again, given that it seems to come up often.
 
 My intuition is not to use a stack, but to use a recursive approach, but this would be pretty thorny (subbing in multiplication results)
+
+## [238_product_of_array_except_self.py](questions/238_product_of_array_except_self.py)
+
