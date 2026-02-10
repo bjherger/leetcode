@@ -47,3 +47,17 @@ My intuition is not to use a stack, but to use a recursive approach, but this wo
 
 ## [238_product_of_array_except_self.py](questions/238_product_of_array_except_self.py)
 
+This one is just about getting the prefix / suffix trick
+
+ - Originally had prefix, suffix and result
+ - Combined prefix and result pass, removed prefix array
+
+Follow up (O(1) except for return array)
+This is tough. Easy to do in T: O(N^2). Complex data type for storing suffix in result array.
+
+Oh, we can just populate the result array with the suffix value at each position. It's no longer needed after we compute position i
+
+### Chat GPT feedback
+
+ - Could have avoided reversed by just iterating backwards w/o extra list
+ - Initializing w/ None is fine, could have inited w/ ints

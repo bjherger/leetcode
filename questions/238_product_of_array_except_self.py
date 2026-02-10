@@ -2,7 +2,7 @@
 
 Start: 3:23
 End: 3:45 (default)
-End: TODO (Follow up)
+End: 3:52 (Follow up)
 
 https://leetcode.com/problems/product-of-array-except-self/?envType=study-plan-v2&envId=leetcode-75
 
@@ -50,20 +50,19 @@ from typing import List
 
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        suffix = [None] * len(nums)
         result = [None] * len(nums)
 
         # Backwards pass for suffix
         suffix_agg = 1
         for (i, num_value) in reversed(list(enumerate(nums))):
-            suffix[i] = suffix_agg
+            result[i] = suffix_agg
             suffix_agg *= num_value
 
 
         # Forward pass for prefix, result
         prefix_agg = 1
         for (i, num_value) in enumerate(nums):
-            result[i] = prefix_agg * suffix[i]
+            result[i] = prefix_agg * result[i]
             prefix_agg *= num_value
         
         return result
