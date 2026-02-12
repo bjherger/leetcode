@@ -78,4 +78,4 @@ Implemention option 4
  - I've implemented it, but I'm not entirely sure why this works?
  - Ties kind of matter
  - It's easier to just use a quick check to see if the current value is equivalent to either smallest or second smallest. If so, we can just continue
- - Leetcode is showing a really long run time relative to others (?)
+ - Leetcode is showing a really long run time relative to others (?). Oh, this is just due to print statement

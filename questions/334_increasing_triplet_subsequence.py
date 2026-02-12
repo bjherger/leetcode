@@ -26,8 +26,8 @@ Explanation: One of the valid triplet is (1, 4, 5), because nums[1] == 1 < nums[
 
 Constraints:
 
-1 <= nums.length <= 5 * 105
--231 <= nums[i] <= 231 - 1
+1 <= nums.length <= 5 * 10**5
+-2**31 <= nums[i] <= 2**31 - 1
  
 
 Follow up: Could you implement a solution that runs in O(n) time complexity and O(1) space complexity?
