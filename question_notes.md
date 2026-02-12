@@ -1,5 +1,7 @@
 # Question notes
 
+Working through [Leetcode 75](https://leetcode.com/studyplan/leetcode-75/)
+
 ## [1768_merge_strings_alternately](questions/1768_merge_strings_alternately.py)
 
 Pretty straight forward. There is a slightly worse option (two pointers), but no better solution listed on leet code. 
@@ -61,3 +63,19 @@ Oh, we can just populate the result array with the suffix value at each position
 
  - Could have avoided reversed by just iterating backwards w/o extra list
  - Initializing w/ None is fine, could have inited w/ ints
+
+## [334_increasing_triplet_subsequence.py](questions/334_increasing_triplet_subsequence.py)
+
+Started w/ option 2 (array of indicies sorted by value). This is complicated and breaks. It breaks because
+ - Duplicates
+ - ie 0, 5, 2, 3 would be hard / require back tracking
+
+There is a much easier O(N). Just track smallest and second smallest seen. 
+
+Implemention option 4
+
+ - Initializing smallest and second smallest is important. Can't just initialize w/ first few values (e.g. index 1 is smaller than index 0). Setting to a large value seems to work
+ - I've implemented it, but I'm not entirely sure why this works?
+ - Ties kind of matter
+ - It's easier to just use a quick check to see if the current value is equivalent to either smallest or second smallest. If so, we can just continue
+ - Leetcode is showing a really long run time relative to others (?)
