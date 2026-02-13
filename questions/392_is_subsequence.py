@@ -30,6 +30,21 @@ s and t consist only of lowercase English letters.
 
 Follow up: Suppose there are lots of incoming s, say s1, s2, ..., sk where k >= 109, and you want to check one by one to see if t has its subsequence. In this scenario, how would you change your code?
 
+Questions
+ - Character set: Doesn't really matter
+ - Array sizes: Mentioned above
+ - Input cleaning: Don't need to do any input cleaning
+
+n = len(s)
+m = len(t)
+
+Options:
+ - Option 1: Two pointers. Scan t once; for each char in s in order, find the next match in t (advance j until t[j]==s[i], then advance i). If we exhaust s, true; else false.
+   - T: O(n + m) — each of s and t traversed at most once.
+   - S: O(1)
+   - Evaluation: Correct, optimal for single-query. No need to "skip" parts of s or t; one pass suffices. For the follow-up (many s, one t), preprocess t into e.g. char->sorted list of indices and binary-search per character for O(m + k*n*log(m)).
+
+
 """
 
 from unittest import TestCase
@@ -43,23 +58,17 @@ class Solution:
         if len(t) < 1:
             return False
 
-        start_index = 0
         s_index = 0
         t_index = 0
 
-        while start_index +1 <= len(t):
-            while t_index + 1 <= len(t):
-                if t[t_index] == s[s_index]:
-                    s_index += 1
-                
-                if s_index == len(s):
-                    return True
-
-                t_index +=1 
+        while s_index +1 <= len(s) and t_index + 1 <= len(t) :
+            if t[t_index] == s[s_index]:
+                s_index += 1
             
-            start_index += 1
-            t_index = start_index
-            s_index = 0
+            if s_index == len(s):
+                return True
+
+            t_index +=1 
 
         return False
 
