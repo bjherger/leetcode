@@ -79,3 +79,14 @@ Implemention option 4
  - Ties kind of matter
  - It's easier to just use a quick check to see if the current value is equivalent to either smallest or second smallest. If so, we can just continue
  - Leetcode is showing a really long run time relative to others (?). Oh, this is just due to print statement
+
+## 443_string_compressing
+
+Skipping
+
+## [283_move_zeroes](questions/283_move_zeroes.py)
+
+ - O(N2) for moving, since sum of n-i = n(n-1)/2 = O(n2)
+ - Made one mistake around < vs <=
+ - It's much easier to say index + 1 instead of len(nums) - 1 (maybe)
+ - Optimization: Cursor suggested a signle pass solution, but this is already single pass (just write sweeting in 2 different while loops)

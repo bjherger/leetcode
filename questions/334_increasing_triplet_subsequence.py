@@ -68,7 +68,6 @@ class Solution:
         second_smallest = max_value + 1
 
         for i in nums:
-            print(smallest, second_smallest, i)
             if i == smallest or i == second_smallest:
                 continue
             elif i < smallest:
