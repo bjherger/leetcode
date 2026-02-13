@@ -90,3 +90,7 @@ Skipping
  - Made one mistake around < vs <=
  - It's much easier to say index + 1 instead of len(nums) - 1 (maybe)
  - Optimization: Cursor suggested a signle pass solution, but this is already single pass (just write sweeting in 2 different while loops)
+
+ ## [392_is_subsequence](questions/392_is_subsequence.py)
+
+ 
