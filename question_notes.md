@@ -93,4 +93,17 @@ Skipping
 
  ## [392_is_subsequence](questions/392_is_subsequence.py)
 
- 
+  - Lots of small practice issues (off by 1 errors, etc)
+  - Swtiched s and t. S is the substring, and I was treating t as the substring
+
+## [11_container_with_most_water](questions/11_container_with_most_water.py)
+
+ - Still, lots of small issues
+ - Used height_l * height_r, instead of min(height_l, height_r) * distance between
+ - The trick is to use two pointers, sweep inward. This is a logic optimization, as kind of requires writing out examples / doing examples by hand
+
+ ## [1679_max_number_of_k_sum_pairs](questions/1679_max_number_of_k_sum_pairs.py)
+
+  - Is there an algorithm to do nlgn sorting in place?
+    - Yes, though they may not be stable or have other complexities (?). Seems good enough for this leetcode question
+  - I accidentally used the index (l) insead of value (nums[l]) at first. Including the word index (ie l_index) would be better in the future
