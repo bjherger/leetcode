@@ -107,3 +107,11 @@ Skipping
   - Is there an algorithm to do nlgn sorting in place?
     - Yes, though they may not be stable or have other complexities (?). Seems good enough for this leetcode question
   - I accidentally used the index (l) insead of value (nums[l]) at first. Including the word index (ie l_index) would be better in the future
+
+## [643_maximum_average_subarray_i](questions/643_maximum_average_subarray_i.py)
+
+Moving notes into the actual question. 
+
+## [1456_maximum_number_of_vowels_in_a_substring_of_given_length](questions/1456_maximum_number_of_vowels_in_a_substring_of_given_length.py)
+
+Moving notes into the actual question. 

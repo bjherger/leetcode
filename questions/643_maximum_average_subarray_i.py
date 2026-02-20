@@ -1,7 +1,7 @@
 """
 
 Start: 4:12
-End: TODO
+End: 4:30
 
 https://leetcode.com/problems/maximum-average-subarray-i/description/?envType=study-plan-v2&envId=leetcode-75
 
@@ -42,6 +42,12 @@ Options
    - S: O(1)
    - Pointers: Current left edge (or right edge). Math: ((Average * k) - nums[left] + nums[left + k]) / k
    - Optimization: k won't change. We can just keep track of the sum
+
+Notes
+
+ - Lots of tiny pointers and such to keep track of
+ - Accidentally switched max window and current window
+ - Originally missed that while condition is left window + k < len(nums) - 1
 
 
 """
