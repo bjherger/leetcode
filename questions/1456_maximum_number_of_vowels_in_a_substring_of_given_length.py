@@ -1,7 +1,7 @@
 """
 
 Start: 4:35
-End: TODO
+End: 4:46
 
 https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/?envType=study-plan-v2&envId=leetcode-75
 
@@ -47,6 +47,11 @@ Options
    - S: O(1)
 
 Notes
+
+ - Originally used < instead of <= in while loop
+ - Vowel check method might be overkill. Also nice to avoid creating vowels each time
+ - The type hint in the problem is wrong. It suggests an array of strings, really the examples are just 1 string
+ - Could use python ternary if a few places
 
 
 """

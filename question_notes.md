@@ -115,3 +115,11 @@ Moving notes into the actual question.
 ## [1456_maximum_number_of_vowels_in_a_substring_of_given_length](questions/1456_maximum_number_of_vowels_in_a_substring_of_given_length.py)
 
 Moving notes into the actual question. 
+
+## [1004_max_consecutive_ones_iii](questions/1004_max_consecutive_ones_iii.py)
+
+Moving notes into the actual question. 
+
+## [1732_find_the_highest_altitude][questions/1732_find_the_highest_altitude.py]
+
+Moving notes into the actual question. 

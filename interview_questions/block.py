@@ -114,5 +114,5 @@ for i in range(5):
 corpus = 'The sky is blue and the sun shines bright. This tree is green and clear. The sun is bright, and the tree looks green. Blue sky and bright sun. The sky is clear, and this tree is green. The sun shines and the sky is blue. This tree looks green and the sun is bright. Clear sky and green tree. The sky is blue, the sun shines bright, and the tree is green. This green tree looks bright under the clear sky.'
 tp2 = TokenPredictor()
 
-tp.fit(corpus)
-tp.generate_sentence('the', 10)
+tp2.fit(corpus)
+tp2.generate_sentence('the', 10)
