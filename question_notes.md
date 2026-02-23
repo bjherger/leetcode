@@ -127,3 +127,7 @@ Moving notes into the actual question.
 ## [724_find_pivot_index][questions/724_find_pivot_index.py]
 
 Moving notes into the actual question. 
+
+## [2215_find_the_difference_of_two_arrays][questions/2215_find_the_difference_of_two_arrays.py]
+
+Moving notes into the actual question. 

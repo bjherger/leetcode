@@ -1,7 +1,7 @@
 """
 
 Start: 11:37
-End: TODO
+End: 11:48
 
 https://leetcode.com/problems/find-pivot-index/description/?envType=study-plan-v2&envId=leetcode-75
 
@@ -56,7 +56,9 @@ Edge cases
 
 Notes
 
- - 
+ - No special tricks. It's just straight forward
+ - Lots of small details (e.g. return left most index, whether pivot index is included in sums)
+ - Most of the time was reading, setting up tests.
 
 
 """
