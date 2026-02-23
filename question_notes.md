@@ -123,3 +123,7 @@ Moving notes into the actual question.
 ## [1732_find_the_highest_altitude][questions/1732_find_the_highest_altitude.py]
 
 Moving notes into the actual question. 
+
+## [724_find_pivot_index][questions/724_find_pivot_index.py]
+
+Moving notes into the actual question. 

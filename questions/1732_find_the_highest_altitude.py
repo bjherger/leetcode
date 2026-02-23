@@ -1,7 +1,7 @@
 """
 
 Start: 11:27
-End: 2:14
+End: 11:32
 
 https://leetcode.com/problems/find-the-highest-altitude/description/?envType=study-plan-v2&envId=leetcode-75
 
@@ -42,7 +42,8 @@ Edge cases
 
 Notes
 
- - 
+ - OK, no trick. This is pretty straight forward
+ - Can use ternary statement or max(current, max_seen)
 
 
 """
@@ -57,7 +58,7 @@ class Solution:
         for i in gain:
             current_altitude += i
 
-            max_seen = current_altitude if current_altitude > max_seen else max_seen
+            max_seen = max(current_altitude, max_seen)
         
         return max_seen
 
