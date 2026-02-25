@@ -1,7 +1,7 @@
 """
 
 Start: 10:19
-End: 
+End: 10:38
 
 https://leetcode.com/problems/equal-row-and-column-pairs/description/?envType=study-plan-v2&envId=leetcode-75
 
@@ -53,8 +53,9 @@ Edge cases
 
 Notes
 
- - 
-
+ - Time complexity was off. Why?
+ - Originally used frozenset instead of tuple (frozen list), which caused slight issues
+ 
 """
 from typing import List
 from unittest import TestCase

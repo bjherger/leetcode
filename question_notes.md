@@ -131,3 +131,19 @@ Moving notes into the actual question.
 ## [2215_find_the_difference_of_two_arrays][questions/2215_find_the_difference_of_two_arrays.py]
 
 Moving notes into the actual question. 
+
+## [2352_equal_row_and_column_pairs][questions/2352_equal_row_and_column_pairs.py]
+
+Moving notes into the actual question. 
+
+## [1004_max_consecutive_ones_iii][questions/1004_max_consecutive_ones_iii.py]
+
+Moving notes into the actual question
+
+## [2390_removing_stars_from_a_string][questions/2390_removing_stars_from_a_string.py]
+
+Moving notes into the actual question
+
+## [735_asteroid_collision](questions/735_asteroid_collision.py)
+
+Moving notes into the actual question

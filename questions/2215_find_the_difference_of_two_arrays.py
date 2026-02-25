@@ -1,9 +1,9 @@
 """
 
 Start: 11:55
-End: 11:48
+End: 12:06
 
-https://leetcode.com/problems/find-the-difference-of-two-arrays/description/?envType=study-plan-v2&envId=leetcode-75j
+https://leetcode.com/problems/find-the-difference-of-two-arrays/description/?envType=study-plan-v2&envId=leetcode-75
 
 Given two 0-indexed integer arrays nums1 and nums2, return a list answer of size 2 where:
 
@@ -51,6 +51,8 @@ Edge cases
 Notes
 
  - Started w/ 4 sets (set of each, return set of each). Could just compute the inersection and remove those - might be easier
+ - No funny business. Just a pretty straight forward question.
+ - Could have picked up the intersection bit earlier. Though iterating through both might be more extensible 
  
 
 
