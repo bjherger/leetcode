@@ -81,7 +81,7 @@ class Solution:
 
         for i in asteroids:
             new_sign = 1 if i > 0 else -1
-            print(i, new_sign, stack, stack_sign)
+            # print(i, new_sign, stack, stack_sign)
 
             if new_sign == stack_sign:
                 stack.append(i)

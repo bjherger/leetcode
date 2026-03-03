@@ -1,7 +1,7 @@
 """
 
 Start: 3:24
-End:
+End: 3:55
 
 https://leetcode.com/problems/asteroid-collision/description/?envType=study-plan-v2&envId=leetcode-75
 
@@ -63,7 +63,10 @@ Edge cases
 Notes
 
  - Lots of small issues. New_sign was pulled incorrectly, using 0 instead of i
- - We need to go through the stack in reverse order, rather than forwards. Missed this the first time. Using reversed in wonky - this may actually reverse rather than just reading backwards
+ - We need to go through the stack in reverse order, rather than forwards. Missed this the first time. Using reversed in wonky - this may actually reverse rather than just reading backwards. Could also just use stack[-1]
+ - Special edge case where asteroids start w/ negative. They'll never hit anything!
+ - Could use something like i / abs(i) instead of tenrary statement
+
 
 
 """
@@ -78,7 +81,7 @@ class Solution:
 
         for i in asteroids:
             new_sign = 1 if i > 0 else -1
-            print(i, new_sign, stack, stack_sign)
+            # print(i, new_sign, stack, stack_sign)
 
             if new_sign == stack_sign:
                 stack.append(i)
@@ -106,7 +109,6 @@ class Solution:
                 
                 if i != 0:
                     stack.append(i)
-        print(stack)
         return stack
 
 
