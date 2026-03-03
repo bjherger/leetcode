@@ -19,6 +19,7 @@ When the user asks to create a new solution file for a LeetCode problem (e.g. fr
 2. **Docstring** (at top of file):
    - **Start / End**: Use the **current time** (when the file is created) for `Start:` and `TODO` for `End:`.
    - **Content**: Include only the problem **description**, **examples**, and **constraints** from the problem. Do **not** include Options, Edge cases, or a filled-in "Questions / notes" section.
+   - **Formatting**: Preserve mathematical notation. When copying from LeetCode, exponents often paste as plain digits—correct them in the docstring (e.g. write **10^9** not 109, **2^31** not 231, **10^5** not 105). Use `^` for superscripts in constraints and examples.
    - **Structure**: After the constraints, include these three sections as **empty** placeholders (no bullets, or a single placeholder bullet if you want):
      - `Questions / notes:` (empty list)
      - `Options` (empty list)
@@ -26,6 +27,7 @@ When the user asks to create a new solution file for a LeetCode problem (e.g. fr
 
 3. **Code**:
    - Add only the necessary imports (e.g. `from unittest import TestCase`) and the **class/function signatures** required by the problem. **Do not implement** the solution (use `...` or `pass` in the body).
+   - Use **`class Solution`** with the problem’s method(s) (e.g. `def predictPartyVictory(self, senate: str) -> str`). Tests should instantiate `Solution()` and call the method (e.g. `Solution().predictPartyVictory("RD")`). Use a standalone function only when the problem explicitly provides a function interface (e.g. top-level `def` in the starter code).
 
 4. **Tests**:
    - Include **all relevant unit tests** from the problem (e.g. the examples). Use `TestCase` and `assertEqual` (or the same style as the template). Tests should run against the stub so they fail until the user implements the solution.
