@@ -33,3 +33,10 @@ When the user asks to create a new solution file for a LeetCode problem (e.g. fr
    - Include **all relevant unit tests** from the problem (e.g. the examples). Use `TestCase` and `assertEqual` (or the same style as the template). Tests should run against the stub so they fail until the user implements the solution.
 
 5. **Do not** add options, edge cases, or "questions/notes" content in the docstring; keep those sections empty for the user to fill when solving.
+
+## Critiquing solutions in LeetCode question files
+
+When the user asks to **critique** a solution (or options, or code) in a file under `questions/` (e.g. "critique this solution", "critique options 1 and 2"):
+
+- **Only provide critique** in your reply (what works, what could be improved, edge cases, style, etc.).
+- **Do not change** the file: no edits to code, docstrings, or "Notes for next time". Critique but don't change.
