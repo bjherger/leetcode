@@ -60,9 +60,8 @@ Options
 
 Notes for next time:
  - Use a 'dummy' head node ahead of the actual head node
- - Prefer `is not None` over `!= None` for identity checks
- - Optional: guard `if not head: return None` for empty list (constraints say n ≥ 1)
- - Little bit o
+ - Little bit of tricky handling w/ dummy head (ie remember to return next), evens and odds, etc
+ - Doing a few by hand was helpful for figuring out when to actually move the inner
 
 """
 from typing import Optional
@@ -78,13 +77,11 @@ class ListNode:
 
 class Solution:
     def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        if not head:
-            return None
         head = ListNode(-1, next=head)
         inner = head
         outer = head
-        while outer.next is not None and outer.next.next is not None:
-complexity            inner = inner.next
+        while outer.next != None and outer.next.next != None:
+            inner = inner.next
             outer = outer.next.next
         inner.next = inner.next.next
         return head.next

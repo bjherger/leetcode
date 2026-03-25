@@ -147,3 +147,7 @@ Moving notes into the actual question
 ## [735_asteroid_collision](questions/735_asteroid_collision.py)
 
 Moving notes into the actual question
+
+## [206_reverse_linked_list](questions/206_reverse_linked_list.py)
+
+Moving notes into the actual question.
