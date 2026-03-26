@@ -53,7 +53,6 @@ Notes for next time:
  - There must be a better way to check if the number is in the heap already that checking the list or keeping a whole separate set
 """
 
-from cgitb import small
 from unittest import TestCase
 
 import heapq

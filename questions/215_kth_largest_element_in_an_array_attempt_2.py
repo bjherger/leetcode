@@ -58,11 +58,8 @@ class Solution:
                 heapq.heappush(h, i)
             elif i > h[0]:
                     heapq.heappushpop(h, i)
-            print(i, h)
         
         return h[0]
-        
-
 
 tc = TestCase()
 tc.assertEqual(Solution().findKthLargest([3, 2, 1, 5, 6, 4], 2), 5)
