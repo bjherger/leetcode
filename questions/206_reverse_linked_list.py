@@ -42,6 +42,7 @@ Notes for next time:
  - Which pointer gets returned? the current pointer, which is the latest (last element)
  - Special case handling for if head or next are None
  - Make updates, update place holders
+ - Can we get away with >4 pointers / variables?
 
 """
 from typing import Optional
