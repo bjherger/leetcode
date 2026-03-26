@@ -1,6 +1,6 @@
 """
-Start: 11:20
-End: 11:32
+Start: 11:39
+End: TODO
 
 https://leetcode.com/problems/kth-largest-element-in-an-array/
 
@@ -35,19 +35,32 @@ Options
  - O2: Min heap, constricted to size k
  - O3: Sorted array of size K, keep track of smallest element
 
+ Implementing 2. What does this look like?
+  - Represent the heap as an array, with childen and 2n+1 and 2n+2
+  - Size of array is k
+  - If array size <k, just add
+  - If array size >=k, only add if current number is greater than index 0 (min)
+  - Return index 0
+
 Notes for next time:
  - Important to know minheap (`import heapq`, headpop, h[0] to peak)
 """
 
 from unittest import TestCase
-
 import heapq
 
 
 class Solution:
     def findKthLargest(self, nums: list[int], k: int) -> int:
+        h = list()
+        for i in nums:
+            if len(h) < k:
+                heapq.heappush(h, i)
+            elif i > h[0]:
+                    heapq.heappushpop(h, i)
+            print(i, h)
         
-        return heapq.nlargest(k, nums)[-1]
+        return h[0]
         
 
 
