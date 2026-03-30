@@ -1,6 +1,6 @@
 """
 Start: 14:25
-End: TODO
+End: 14:36
 
 https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/?envType=study-plan-v2&envId=leetcode-75
 
@@ -41,6 +41,8 @@ Options
 Will do 2
 
 Notes for next time:
+ - Row wise iteration w/ for loop isn't too bad. 
+ - Tie breaking happens as expected
 """
 
 from __future__ import annotations
