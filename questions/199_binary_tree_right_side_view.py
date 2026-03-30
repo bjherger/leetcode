@@ -1,6 +1,6 @@
 """
 Start: 14:04
-End: TODO
+End: 14:15
 
 https://leetcode.com/problems/binary-tree-right-side-view/description/?envType=study-plan-v2&envId=leetcode-75
 
@@ -42,6 +42,8 @@ Options
  - O2: Breadth first search, append right most to results array. Can be done w/ either single queue keeping track of level and updating ith index, or two containers and updating when current container is of size 1
 
 Notes for next time:
+ - Could also do something like res.append(q[0].val); for _ in range(len(q)): 
+   - This involves a lot of syntatic sugar, like q[0] and freezing the row size w/ range(len(q))
 """
 from __future__ import annotations
 
@@ -68,7 +70,6 @@ class Solution:
 
         while len(d) > 0:
             c, i = d.popleft()
-            print(c, i)
 
             if c.left is not None:
                 d.append((c.left, i + 1))

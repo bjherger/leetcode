@@ -56,7 +56,7 @@ Options
  - O2: Sort potions, get upper and lower bound
    - T: O(plg(p) + nlg(p)) 
    - S: O(s) (if sorting potions in place)
- - O3: Counter for potions, determine how many potions have at least strenght of X
+ - O3: Counter for potions, determine how many potions have at least strength of X
    - Alot
  - O4: Counter of potions, loop through all potions each time
    - Rpoughly same as O1
