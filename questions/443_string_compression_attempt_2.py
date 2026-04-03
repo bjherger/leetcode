@@ -1,6 +1,6 @@
 """
 Start: 16:30
-End: 
+End: 16:52
 
 https://leetcode.com/problems/string-compression/description/?envType=study-plan-v2&envId=leetcode-75
 
@@ -57,7 +57,8 @@ Options
    - S: O(1) (no new space for result, using existing array)
 
 Notes for next time:
- -
+  - Quite a doozy.
+  - Lots of small bits to catch
 """
 
 from typing import List
